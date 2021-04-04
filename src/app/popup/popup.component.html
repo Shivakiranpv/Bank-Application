@@ -1,0 +1,56 @@
+
+<h4>please fill the details to open bank account</h4>
+<div class="container-fluid">
+
+    <form [formGroup]="submitForm" (ngSubmit)="onSubmit()">
+         <div class="form-group">
+            <mat-icon color='primary'>person</mat-icon>&nbsp;
+            <mat-form-field appearance="outline">
+              <mat-label>First Name</mat-label>
+              <input [class.is-invalid]="firstName.invalid 
+              && firstName.touched"   formControlName="firstName" matInput type="text" class="form-control">
+            </mat-form-field>
+            &nbsp;&nbsp;
+          <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input [class.is-invalid]="lastName.invalid 
+            && lastName.touched"   formControlName="lastName" matInput type="text" class="form-control">
+          </mat-form-field>
+       </div>
+       <mat-icon color='primary'>cake</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <mat-form-field>
+        <mat-label>Date of Birth</mat-label>
+        <input matInput [matDatepicker]="myDatePicker">
+        <mat-datepicker-toggle matSuffix [for]="myDatePicker"></mat-datepicker-toggle>
+        <mat-datepicker #myDatePicker></mat-datepicker>
+      </mat-form-field>
+      
+          <div class="form-group">
+              <mat-icon color='primary'>email</mat-icon>&nbsp;
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input [class.is-invalid]="lastName.invalid 
+              && lastName.touched"   formControlName="lastName" matInput type="text" class="form-control">
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+              <mat-icon color='primary'>visibility</mat-icon>&nbsp;
+            <mat-form-field appearance="outline">
+              <mat-label>PassWord</mat-label>
+              <input [class.is-invalid]="lastName.invalid 
+              && lastName.touched"   formControlName="lastName" matInput type="text" class="form-control">
+            </mat-form-field>
+          </div>
+
+
+
+          <div class="submitbutton">
+            <button color='primary' mat-raised-button type="submit" >Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button color='primary' mat-raised-button type="submit" >Close</button>
+          </div>
+
+
+     </form>
+ <!--{{submitForm.value | json}}-->
+
+</div>
