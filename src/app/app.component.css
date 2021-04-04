@@ -1,0 +1,73 @@
+ body{
+background-color: rgba(197, 236, 209, 0.452);
+}
+h2{
+    color:indianred;
+    position: absolute;
+    left:40%;
+    top: 2%;
+}
+.icon{
+    position: absolute;
+    right: 240px;
+    top:6%;
+}
+.account{
+    position: absolute;
+  right: 100px;
+  top:5%; 
+}
+
+.parent{
+    position: fixed;
+    align-items: center;
+    top: 30%;
+    left: 40%;
+}
+
+.loginbutton{
+    position: fixed;
+    align-items: center;
+    top: 55%;
+    left:45%;
+  }
+
+  .loginbutton1{
+    position: fixed;
+    align-items: center;
+    top: 50%;
+    left: 0%;
+  }
+
+  .loginbutton2{
+    position: fixed;
+    align-items: center;
+    top: 40%;
+    left: 0%;
+  }
+
+  .loginbutton0{
+    position: fixed;
+    align-items: center;
+    top: 30%;
+    left: 0%;
+
+  } 
+
+  table {
+   /*  width: 80%;
+    margin :20px auto; */
+    margin: 16px 8px;
+  }
+/*   
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+} */
+
+.mat-table{
+  position: absolute;
+  left :13%;
+  top: 40%;
+  width: 80%;
+}
